@@ -29,10 +29,10 @@ This allows for you break the downloads up, perhaps you don't want to download a
 If you open the browser console and load the page your will see the downloading etc in action.
 
 ### Other Things
-*This is using JDK 8+
-*This is using GWT 2.8.1
-*This is using Gradle 4.1, because of this the Jetty plugin as removed and deprecated so we switched over to using the built in SimpleHttpFileServer instead
-*You can add assets to be downloaded during the EntryPoint phase, if required, this will of course increase the time on the first progress bar download.
+* This is using JDK 8+
+* This is using GWT 2.8.1
+* This is using Gradle 4.1, because of this the Jetty plugin as removed and deprecated so we switched over to using the built in SimpleHttpFileServer instead
+* You can add assets to be downloaded during the EntryPoint phase, if required, this will of course increase the time on the first progress bar download.
 *This, like most projects, has it's own caveats, the main one that springs to mind is that you need to explicitly list the assets to load that are otherwise
 taken implicitly. For example loading a texture atlas, with the AssetManager class it uses the loader to pick up on the texture used, this needs to be explicitly
 stated with the OnDemandAssetLoader
