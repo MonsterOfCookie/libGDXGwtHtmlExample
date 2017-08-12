@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Html Example</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <script>
+		window.onkeydown = function(e) {
+					if( (e.keyCode == 32 || e.keyCode == 40) && e.target.id == "myCanvas") {
+						e.preventDefault();
+						return false;
+					}
+				};
+    </script>
+</head>
+<body>
+<div style="margin-left: auto; margin-right: auto; width: 100vw;"
+     id="embed-html">
+    <div id="canvasDiv" style="display: none;">
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <table cellspacing="0" cellpadding="0" id="initial-preloader" align="center" class="gdx-preloader"
+           style="width: 100vw;">
+        <tbody>
+        <tr>
+            <td align="center" style="vertical-align: top; margin-left: auto; margin-right: auto; padding-top: 200px;">
+                <div class="gdx-meter white" style="width: 100%;">
+                    <span class="gwt-InlineHTML" id="loading-meter" style="width: 0%;"></span>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript" src="html/html.nocache.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+canvas {
+    cursor: default;
+    outline: none;
+}
+
+body {
+    background-color: #1a090e;
+    color: #FFFFFF;
+}
+
+.gdx-meter.white > span {
+	background-color: #1a090e;
+	background-image: -moz-linear-gradient(top, #1a090e, #ffffff);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #1a090e),color-stop(1, #ffffff));
+	background-image: -webkit-linear-gradient(#1a090e, #ffffff);
+}
